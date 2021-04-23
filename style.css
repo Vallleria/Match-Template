@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('./fonts/DroidSerif-Bold.woff2') format('woff2'),
+        url('./fonts/DroidSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
     --color-pink: #ed145b;
@@ -34,14 +44,18 @@ body {
 
 .main-header {
     min-height: 800px;
-    /* background-repeat: no-repeat; */
+
+    background-image: url(./img/header-bg.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     /* object-fit: cover; */
     background-size: auto, cover;
-    background: url(./img/header-bg.jpg);
+    
+    background-color: #060606;
 }
 
 .container {
+    position: relative;
     margin: 0 auto;
     max-width: 1170px;
     padding: 0 15px;
@@ -139,3 +153,186 @@ body {
 .btn:hover {
     background-color:var(--color-pink-light);
 }
+
+.about {
+    position: relative;
+    background-color: #f4f4f4;
+    padding-top: 130px;
+    padding-bottom: 100px;
+    min-height: 650px;
+    z-index: -2;
+}
+.content-wrapper{
+    max-width: 490px;
+}
+
+.about-mac-image {
+    position: absolute;
+    width: 1030px;
+    right: -300px;
+    top: 0;
+}
+
+.about-title{
+         position: relative;
+        font-size: 38px;
+        font-family: "Lato";
+        font-weight: 100;
+        color: rgb(90, 90, 90);
+        font-style: italic;
+        line-height: 52px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+}
+
+.about-text {
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.about-title::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: var(--color-pink);
+    bottom: 0;
+    left: 0;
+}
+.about-video-link{
+    display: flex;
+    align-items: center;
+    color: var(--color-pink);
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.about-video-link-text {
+    margin-right: 5px;
+}
+
+.about::before {
+    position: absolute;
+    content: "";
+    /* background-image: url("./img/line.png");
+    background-repeat: no-repeat;
+    background-size: ; */
+    background-color: var(--color-pink);
+    top: -40px;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    transform: rotate(-1deg);
+    z-index: -1;
+}
+.services{
+    padding-top: 140px;
+    padding-bottom: 100px;
+
+}
+.services-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px ;
+    margin-bottom: 70px;
+}
+.services-title{
+    position: relative;
+    font-size: 38px;
+    font-weight: 100;
+    font-family: "Lato";
+    color: rgb(90, 90, 90);
+    font-style: italic;
+    line-height: 52px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.services-text{
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.services-title::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: var(--color-pink);
+    bottom: 0;
+    left: 0;
+}
+
+.services-center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.services-features{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-feauture-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.services-feature-title{
+    color:var(--color-pink);
+}
+.services-feature-img{
+    margin-bottom: 30px;
+}
+
+.quotes{
+    background-image: url(./img/header-bg.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: cover; */
+    background-size: auto, cover;
+    background-color: #060606;
+}
+.slider-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.slider-text {
+    position: relative;
+    color: var(--color-white);
+    font-size: 25px;
+    font-family: "Lato";
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.slider-text::before {
+    position: absolute;
+    content: "„";
+    font-size: 159px;
+    font-family: 'Droid Serif';
+    font-weight: bold;
+    color: var(--color-pink);    
+    top: -150px;
+    left: 50%;
+    transform: rotate(180deg);
+}
+
+.slider-text::after {
+    position: absolute; 
+    content: "„";
+    font-size: 159px;
+    font-family: 'Droid Serif';
+    font-weight: bold;
+    color: var(--color-pink);
+    left: 50%;
+    top: -50px;
+}
+
+
